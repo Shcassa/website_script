@@ -11,6 +11,6 @@ jobs:
 
       - name: Build and push the image
         run: |
-          docker login --username Shcassa --password ${{ secrets.GH_PAT }} ghcr.io
-          docker build . --tag ghcr.io/Schassa/website_script:latestversion1
-          docker push ghcr.io/Schassa/website_script:latestversion1
+          docker login --username shcassa --password ${{ secrets.GH_PAT }} ghcr.io
+          docker build . --tag ghcr.io/schassa/website_script:latestversion1
+          docker push ghcr.io/schassa/website_script:latestversion1
